@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'source /etc/profile'
                 sh 'python --version'
             }
         }
